@@ -43,56 +43,70 @@ python-portfolio/
 
 Clone the repository:
 
+```bash
 git clone https://github.com/meriemgfl/python-portfolio.git
+```
 
 Navigate into the project:
 
+```bash
 cd python-portfolio
+```
 
 Create a virtual environment:
 
+```bash
 python -m venv .venv
+```
 
 Activate the virtual environment on Windows:
 
+```bash
 .venv\Scripts\activate
+```
 
 Install the dependencies:
 
+```bash
 pip install flask
+```
 
 Run the application:
 
+```bash
 python app.py
+```
 
 Then open:
 
+```text
 http://127.0.0.1:5000
+```
 
 ## 📌 Planned Improvements
 
--Add real GitHub repository links for projects
--Build the Job Application Tracker API
--Add automated tests
--Improve accessibility
--Add deployment
--Add a live portfolio URL
--Add additional Python projects
--Expand the portfolio to demonstrate full-stack development
+- Add real GitHub repository links for projects
+- Build the Job Application Tracker API
+- Add automated tests
+- Improve accessibility
+- Add deployment
+- Add a live portfolio URL
+- Add additional Python projects
+- Expand the portfolio to demonstrate full-stack development
 
 ## 📚 What I'm Learning
 
 This project is helping me develop practical experience with:
 
-Flask
-HTTP and REST APIs
-Routing
-Jinja templates
-Form handling
-Server-side validation
-Git and GitHub
-Responsive web development
-Deployment
+- Flask
+- HTTP and REST APIs
+- Routing
+- Jinja templates
+- Form handling
+- Server-side validation
+- Git and GitHub
+- Responsive web development
+- Deployment
 
 ## 📄 License
 
