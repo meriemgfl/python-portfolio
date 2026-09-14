@@ -38,6 +38,7 @@ python-portfolio/
 ├── .gitignore
 ├── app.py
 └── README.md
+```
 
 ## 💻 Running Locally
 
