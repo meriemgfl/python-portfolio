@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+
+    {{ title }} | Your Name
+
+{% endblock %}
+
+
+{% block content %}
+
+<main class="result-page">
+
+    <p class="section-label">
+        {{ label }}
+    </p>
+
+    <h1>
+        {{ title }}
+    </h1>
+
+
+    {% if errors %}
+
+        <div class="error-list">
+
+            {% for error in errors %}
+
+                <p>{{ error }}</p>
+
+            {% endfor %}
+
+        </div>
+
+    {% else %}
+
+        <p>
+            {{ message }}
+        </p>
+
+    {% endif %}
+
+
+    <a class="button" href="{{ url_for('home') }}">
+        ← Back to portfolio
+    </a>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+
+    {{ project.name }} | Your Name
+
+{% endblock %}
+
+
+{% block content %}
+
+<section class="project-detail">
+
+    <p class="project-label">PROJECT</p>
+
+    <h1>{{ project.name }}</h1>
+
+    <p class="project-description">
+        {{ project.description }}
+    </p>
+
+
+    <img
+        class="project-image"
+        src="{{ url_for('static', filename='images/' + project.image) }}"
+        alt="Screenshot of {{ project.name }}"
+    >
+
+
+    <div class="project-actions">
+
+        <a class="button" href="{{ project.github }}">
+            View Source Code ↗
+        </a>
+
+        <a class="button secondary" href="{{ project.demo }}">
+            Live Demo ↗
+        </a>
+
+    </div>
+
+
+    <div class="project-section">
+
+        <h2>The Problem</h2>
+
+        <p>
+            {{ project.problem }}
+        </p>
+
+    </div>
+
+
+    <div class="project-section">
+
+        <h2>The Solution</h2>
+
+        <p>
+            {{ project.solution }}
+        </p>
+
+    </div>
+
+
+    <div class="project-section">
+
+        <h2>Technologies</h2>
+
+        <div class="tech-list">
+
+            {% for technology in project.technologies %}
+
+                <span class="tech-badge">
+                    {{ technology }}
+                </span>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+
+    <div class="project-section">
+
+        <h2>What I Learned</h2>
+
+        <p>
+            {{ project.learning }}
+        </p>
+
+    </div>
+
+
+    <a class="back-link" href="{{ url_for('home') }}#projects">
+        ← Back to projects
+    </a>
+
+</section>
+
+{% endblock %}

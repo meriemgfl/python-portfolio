@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}Your Name | Developer Portfolio{% endblock %}</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <a class="nav-logo" href="{{ url_for('home') }}">
+                Your Name
+            </a>
+
+            <div class="nav-links">
+
+                <a href="{{ url_for('home') }}#about">
+                    About
+                </a>
+
+                <a href="{{ url_for('home') }}#projects">
+                    Projects
+                </a>
+
+                <a href="{{ url_for('home') }}#skills">
+                    Skills
+                </a>
+
+                <a href="{{ url_for('home') }}#contact">
+                    Contact
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        {% block content %}{% endblock %}
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Your Name
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Page Not Found | Your Name
+{% endblock %}
+
+{% block content %}
+
+<section class="result-page">
+
+    <p class="section-label">404 ERROR</p>
+
+    <h1>Page not found.</h1>
+
+    <p>
+        Sorry, the page you're looking for doesn't exist or may have been moved.
+    </p>
+
+    <a class="button" href="{{ url_for('home') }}">
+        ← Back to portfolio
+    </a>
+
+</section>
+
+{% endblock %}
